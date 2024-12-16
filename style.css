@@ -1,0 +1,111 @@
+/*color
+color azul #3C54B4
+celeste #94CCDB
+morado #7A5197
+
+*/
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-pagina {
+    display: grid;
+    grid-template-rows: 8rem auto 10rem 10rem;
+    grid-template-columns: auto auto auto ;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "Estudios Practicas Practicas"
+    "footer footer footer";
+    height: 100vh;
+}
+
+.menu{
+    display: flex;
+    justify-content:space-between ;
+}
+
+.secciones-menu{
+    display: flex;
+    justify-content:space-between ;
+}
+
+
+li{
+    margin: 10px ;
+}
+
+
+h2{
+    font-size: 6rem;
+    color:  white;
+    margin-top: 8px;
+    text-align: left;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+
+nav{
+    margin-top: 15px;;
+    border-radius: 20px;
+}
+
+
+div{
+    margin-top: 15px;;
+    border-radius: 20px;
+}
+
+
+
+header {
+    grid-area: header;
+    background-color:#3C54B4 ;
+    border-radius: 10px;
+}
+
+.main {
+    grid-area: main;
+    background-color:#7A5197 ;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color:#94CCDB ;
+    border-radius: 20px;
+}
+
+.estudios{
+    grid-area: Estudios;
+    background-color: red;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.practicas{
+    grid-area: Practicas;
+    background-color: green;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.logos{
+    height: 120px;
+    width: 120px;
+    object-fit: fill;
+}
